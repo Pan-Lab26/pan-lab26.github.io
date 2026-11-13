@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pan Research Group | University of Kentucky</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f2f5f9;
+      color: #172842;
+      font: 17px/1.6 Arial, sans-serif;
+    }
+    .site {
+      max-width: 1180px;
+      margin: auto;
+      background: white;
+    }
+    header, footer { background: #132744; color: white; padding: 22px 6%; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header a, footer a { color: white; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      min-height: 390px;
+      display: grid;
+      align-content: center;
+      padding: 55px 6%;
+      color: white;
+      background: linear-gradient(90deg, #102442eb, #10244255),
+                  url("images/lab-photo.jpg") center / cover no-repeat,
+                  #204c80;
+    }
+    h1, h2, h3 { font-family: Georgia, serif; line-height: 1.15; }
+    h1 { font-size: clamp(38px, 7vw, 68px); margin: 8px 0; }
+    .hero p { max-width: 600px; }
+    section:not(.hero) { padding: 36px 6%; }
+    section h2 { margin-top: 0; }
+    .directions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 28px;
+    }
+    .directions article { border-top: 3px solid #245b9b; }
+    .join { background: #eaf1fb; }
+    a { color: #174e93; }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <strong>Pan Research Group</strong>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>University of Kentucky</div>
+        <h1>Pan Research Group</h1>
+        <p>We develop materials and separation processes to recover critical
+          minerals from brines, produced water, and mining waste.</p>
+      </section>
+
+      <section class="join">
+        <h2>Work With Us</h2>
+        <p>Interested in graduate research or collaboration? 
+          <a href="mailto:yanan.pan@uky.edu">Get in touch.</a></p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <div class="directions">
+          <article>
+            <h3>Functional Materials</h3>
+            <p>We design selective adsorbents and study how their structure
+              and surface chemistry govern ion uptake.</p>
+          </article>
+          <article>
+            <h3>Hydrometallurgy</h3>
+            <p>We develop aqueous separation processes and study how they
+              perform with complex feedstocks and under continuous operation.</p>
+          </article>
+          <article>
+            <h3>Critical Mineral Recovery</h3>
+            <p>We recover lithium, rare earth elements, and other valuable
+              metals from unconventional resources and waste streams.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="people">
+        <h2>People</h2>
+        <p><strong>Yanan Pan, Ph.D.</strong><br>
+          Assistant Professor, University of Kentucky<br>
+          <a href="https://engr.uky.edu/people/yanan-pan">Faculty profile</a></p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p><a href="https://scholar.google.com/citations?user=B6CW4MwAAAAJ">
+          View publications on Google Scholar</a></p>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <strong>Contact</strong><br>
+      University of Kentucky · Lexington, Kentucky<br>
+      <a href="mailto:yanan.pan@uky.edu">yanan.pan@uky.edu</a>
+    </footer>
+  </div>
+</body>
+</html>
